@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nuxt",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "build": "nuxt build"
   },
   "repository": "https://github.com/ronaldhariyanto/dpp.git",
   "author": "ronaldhariyanto",

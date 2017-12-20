@@ -7,12 +7,12 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Meta description' }
     ],
     link: [
-      { rel: 'stylesheet', href: '/css/uikit.min.css' },
+      { rel: 'stylesheet', href: 'css/uikit.min.css' },
       { rel: 'favicon', href: 'favicon.ico' }
     ],
     script: [
-      { src: '/js/uikit.min.js' },
-      { src: '/js/uikit-icons.min.js' }
+      { src: 'js/uikit.min.js' },
+      { src: 'js/uikit-icons.min.js' }
     ]
   }
 }

@@ -1,31 +1,31 @@
 {
   "publicPath": "/_nuxt/",
   "all": [
-    "manifest.b98f7f579390e93ec64b.js",
+    "manifest.7b3789b70b058e3c8f04.js",
     "img/slide-01.f13dc4f.jpg",
     "img/slide-03.0676abf.jpg",
     "img/slide-04.287fff5.jpg",
-    "pages/index.2fbf8bd3c673894110fa.js",
+    "pages/index.e1e741f5af8b1f5fb3b3.js",
     "layouts/default.36ba46a93d27fa0873de.js",
     "common.cb61b5f5335cbf49f557.js",
-    "app.57e0296355b7519f7a04.js",
+    "app.73f72b489ad9faee17b2.js",
     "img/slide-02.07971b4.jpg",
     "LICENSES",
-    "pages/index.2fbf8bd3c673894110fa.js.map",
+    "pages/index.e1e741f5af8b1f5fb3b3.js.map",
     "layouts/default.36ba46a93d27fa0873de.js.map",
     "common.cb61b5f5335cbf49f557.js.map",
-    "app.57e0296355b7519f7a04.js.map",
-    "manifest.b98f7f579390e93ec64b.js.map",
+    "app.73f72b489ad9faee17b2.js.map",
+    "manifest.7b3789b70b058e3c8f04.js.map",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.b98f7f579390e93ec64b.js",
+    "manifest.7b3789b70b058e3c8f04.js",
     "common.cb61b5f5335cbf49f557.js",
-    "app.57e0296355b7519f7a04.js"
+    "app.73f72b489ad9faee17b2.js"
   ],
   "async": [
-    "pages/index.2fbf8bd3c673894110fa.js",
+    "pages/index.e1e741f5af8b1f5fb3b3.js",
     "layouts/default.36ba46a93d27fa0873de.js"
   ],
   "modules": {
@@ -112,6 +112,10 @@
     "2e3c7047": [
       6,
       12
+    ],
+    "0c7adf2a": [
+      7,
+      13
     ],
     "c1597c86": [
       6,
@@ -441,14 +445,6 @@
       2,
       3
     ],
-    "1eaa1c34": [
-      4,
-      10,
-      1,
-      8,
-      2,
-      3
-    ],
     "d6fc2a3c": [
       6,
       12
@@ -480,10 +476,6 @@
     "463dcec6": [
       6,
       12
-    ],
-    "1c4e4822": [
-      7,
-      13
     ],
     "2e6b3256": [
       7,
@@ -524,6 +516,14 @@
     "a4f0236c": [
       7,
       13
+    ],
+    "775a009c": [
+      4,
+      10,
+      1,
+      8,
+      2,
+      3
     ],
     "30c81b9a": [
       6,
@@ -645,10 +645,6 @@
       6,
       12
     ],
-    "629e580d": [
-      6,
-      12
-    ],
     "cae00fca": [
       7,
       13
@@ -666,6 +662,10 @@
       12
     ],
     "3b3602e0": [
+      6,
+      12
+    ],
+    "629e580d": [
       6,
       12
     ],
