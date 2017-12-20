@@ -1,32 +1,32 @@
 {
-  "publicPath": "/_nuxt/",
+  "publicPath": "https://ronaldhariyanto.github.io/dpp/dist/",
   "all": [
-    "manifest.7b3789b70b058e3c8f04.js",
+    "manifest.4ed6cf7bdf19cd01defc.js",
     "img/slide-01.f13dc4f.jpg",
     "img/slide-03.0676abf.jpg",
     "img/slide-04.287fff5.jpg",
-    "pages/index.e1e741f5af8b1f5fb3b3.js",
-    "layouts/default.36ba46a93d27fa0873de.js",
+    "pages/index.b0cc12fc2f9228f22e03.js",
+    "layouts/default.a145ded1c8c7d37a4e10.js",
     "common.cb61b5f5335cbf49f557.js",
-    "app.73f72b489ad9faee17b2.js",
+    "app.55809a1cce377eaf9ca7.js",
     "img/slide-02.07971b4.jpg",
     "LICENSES",
-    "pages/index.e1e741f5af8b1f5fb3b3.js.map",
-    "layouts/default.36ba46a93d27fa0873de.js.map",
+    "pages/index.b0cc12fc2f9228f22e03.js.map",
+    "layouts/default.a145ded1c8c7d37a4e10.js.map",
     "common.cb61b5f5335cbf49f557.js.map",
-    "app.73f72b489ad9faee17b2.js.map",
-    "manifest.7b3789b70b058e3c8f04.js.map",
+    "app.55809a1cce377eaf9ca7.js.map",
+    "manifest.4ed6cf7bdf19cd01defc.js.map",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.7b3789b70b058e3c8f04.js",
+    "manifest.4ed6cf7bdf19cd01defc.js",
     "common.cb61b5f5335cbf49f557.js",
-    "app.73f72b489ad9faee17b2.js"
+    "app.55809a1cce377eaf9ca7.js"
   ],
   "async": [
-    "pages/index.e1e741f5af8b1f5fb3b3.js",
-    "layouts/default.36ba46a93d27fa0873de.js"
+    "pages/index.b0cc12fc2f9228f22e03.js",
+    "layouts/default.a145ded1c8c7d37a4e10.js"
   ],
   "modules": {
     "42090453": [
@@ -36,6 +36,14 @@
     "55768530": [
       6,
       12
+    ],
+    "34a7beae": [
+      4,
+      10,
+      1,
+      8,
+      2,
+      3
     ],
     "1fe56458": [
       6,
@@ -85,9 +93,29 @@
       7,
       13
     ],
+    "31bf6667": [
+      5,
+      11
+    ],
+    "0b134330": [
+      5,
+      11
+    ],
+    "c0d60110": [
+      4,
+      10,
+      1,
+      8,
+      2,
+      3
+    ],
     "1c55c463": [
       6,
       12
+    ],
+    "68bcba17": [
+      7,
+      13
     ],
     "2dd2f932": [
       6,
@@ -112,10 +140,6 @@
     "2e3c7047": [
       6,
       12
-    ],
-    "0c7adf2a": [
-      7,
-      13
     ],
     "c1597c86": [
       6,
@@ -193,6 +217,10 @@
       6,
       12
     ],
+    "01b5235c": [
+      5,
+      11
+    ],
     "0a94b6b4": [
       6,
       12
@@ -204,6 +232,10 @@
     "4b15f5a0": [
       7,
       13
+    ],
+    "5b5f14c8": [
+      5,
+      11
     ],
     "423166b4": [
       6,
@@ -217,6 +249,10 @@
       7,
       13
     ],
+    "52f1ca59": [
+      5,
+      11
+    ],
     "9932f32c": [
       6,
       12
@@ -229,6 +265,10 @@
       6,
       12
     ],
+    "73935b7d": [
+      7,
+      13
+    ],
     "14f1fe2d": [
       6,
       12
@@ -236,6 +276,22 @@
     "1c4ef2d2": [
       6,
       12
+    ],
+    "67ab18dc": [
+      4,
+      10,
+      1,
+      8,
+      2,
+      3
+    ],
+    "35edace5": [
+      4,
+      10,
+      1,
+      8,
+      2,
+      3
     ],
     "209b6c8b": [
       7,
@@ -252,6 +308,10 @@
     "6ef470c9": [
       6,
       12
+    ],
+    "5fef6bae": [
+      5,
+      11
     ],
     "c01138e6": [
       6,
@@ -397,6 +457,10 @@
       6,
       12
     ],
+    "6519d95e": [
+      7,
+      13
+    ],
     "74dfdd8a": [
       6,
       12
@@ -501,10 +565,6 @@
       6,
       12
     ],
-    "418a96e0": [
-      5,
-      11
-    ],
     "df1cdfa8": [
       6,
       12
@@ -517,14 +577,6 @@
       7,
       13
     ],
-    "775a009c": [
-      4,
-      10,
-      1,
-      8,
-      2,
-      3
-    ],
     "30c81b9a": [
       6,
       12
@@ -534,6 +586,14 @@
       12
     ],
     "4145e28c": [
+      6,
+      12
+    ],
+    "2ea74f9e": [
+      6,
+      12
+    ],
+    "629e580d": [
       6,
       12
     ],
@@ -589,23 +649,23 @@
       7,
       13
     ],
-    "06d8e13a": [
-      5,
-      11
-    ],
     "f223014a": [
       6,
       12
+    ],
+    "696d94ab": [
+      4,
+      10,
+      1,
+      8,
+      2,
+      3
     ],
     "0324c7f7": [
       7,
       13
     ],
     "084c25ce": [
-      6,
-      12
-    ],
-    "2ea74f9e": [
       6,
       12
     ],
@@ -645,6 +705,10 @@
       6,
       12
     ],
+    "436689d9": [
+      5,
+      11
+    ],
     "cae00fca": [
       7,
       13
@@ -665,13 +729,17 @@
       6,
       12
     ],
-    "629e580d": [
-      6,
-      12
-    ],
     "b40b963a": [
       6,
       12
+    ],
+    "566dba30": [
+      4,
+      10,
+      1,
+      8,
+      2,
+      3
     ],
     "47351b28": [
       6,

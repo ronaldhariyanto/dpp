@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^6.0.6",
+    "uikit": "^3.0.0-beta.35"
   }
 }
