@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "description": "revamp",
   "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "generate": "nuxt generate"
+  },
   "repository": "https://github.com/ronaldhariyanto/dpp.git",
   "author": "ronaldhariyanto",
   "license": "MIT",
+  "dependencies": {
+    "nuxt": "^1.0.0-rc11"
+  },
   "devDependencies": {
-    "express": "^4.16.2",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-ejs": "^3.1.0",
-    "gulp-watch": "^4.3.11",
-    "uikit": "^3.0.0-beta.35"
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6"
   }
 }
