@@ -9,23 +9,6 @@
               <span class="uk-margin-small-top dp-footer-logo__title">Dana Pensiun</span>
               <span class="uk-margin-small-bottom dp-footer-logo__subtitle">Pertamina</span>
             </div>
-            <ul class="uk-list">
-              <li>
-                <a href="" class="uk-margin-small-right" >
-                  <span uk-icon="icon: twitter; ratio: 0.8"></span> Twitter
-                </a>
-              </li>
-              <li>
-                <a href="" class="uk-margin-small-right">
-                  <span uk-icon="icon: facebook; ratio: 0.8"></span> Facebook
-                </a>
-              </li>
-              <li>
-                <a href="" class="">
-                  <span uk-icon="icon: google-plus; ratio: 0.8"></span> Google Plus
-                </a>
-              </li>
-            </ul>
           </div>
           <div class="uk-width-1-4">
             <div class="">
@@ -64,8 +47,19 @@
             </div>
           </div>
           <div class="uk-width-1-4">
-            <div class="">
-              <h4>Di bawah pengawasan</h4>
+            <h4>Follow us on:</h4>
+            <div class="uk-flex">
+              <a href="" class="uk-margin-small-right" >
+                <span uk-icon="icon: twitter; ratio: 1.2"></span>
+              </a>
+              <a href="" class="uk-margin-small-right">
+                <span uk-icon="icon: facebook; ratio: 1.2"></span>
+              </a>
+              <a href="" class="">
+                <span uk-icon="icon: google-plus; ratio: 1.2"></span>
+              </a>
+            </div>
+            <div class="uk-margin-medium-top">
               <a href="#" class="uk-display-block"><img src="~/static/img/logo-ojk.png" alt=""></a>
             </div>
           </div>
@@ -82,8 +76,16 @@
 
 <style>
   .dp-footer {
-    background-color: #d8d8d8;
-    color: #808080;
+    background-color: #002042;
+    color: #7ac8ff;
+  }
+
+  .dp-footer h4 {
+    color:  #2d79c4;
+  }
+
+  .dp-footer a {
+    color:  #fff;
   }
 
   .dp-footer-logo {
@@ -104,12 +106,15 @@ span.dp-footer-logo__subtitle {
     text-transform: uppercase;
     font-weight: 600;
     line-height: 1;
-    color: #000;
+    color: #fff;
+    font-size: 1.3em;
+    line-height: 1.3;
 }
 
 .dp-footer__copyright {
-  background: #252525;
-    color: #c3c3c3;
-    font-size: 85%;
+  background: #002042;
+    color: #7ac8ff;
+    font-size: 90%;
+    border-top: 1px dotted #024793;
 }
 </style>

@@ -1,30 +1,23 @@
 <template>
-  <section class="dp-header">
-    <div class="uk-container">
-      <div class="">
-        <a href="#" class="dp-logo">
+  <section>
+    <div class="dp-header">
+      <div class="uk-container">
+        <div class="dp-logo">
           <img src="~/static/img/logo-dp-header.png" alt="">
           <span class="dp-logo__title">Dana Pensiun
             <b class="dp-logo__subtitle">Pertamina</b>
           </span>
-        </a>
+        </div>
       </div>
-      <nav class="uk-navbar-container uk-navbar-transparent uk-navbar" uk-navbar>
+    </div>
+    <div class="dp-navbar">
+      <nav class="uk-container uk-navbar-container uk-navbar-transparent uk-navbar" uk-navbar>
         <div class="uk-navbar-left">
           <ul class="uk-navbar-nav">
             <li class="uk-active"><a href="">Home</a></li>
-            <li class="uk-parent"><a href="">Tentang Kami</a></li>
+            <li><a href="">Tentang Kami</a></li>
             <li><a href="">Informasi</a></li>
-            <li>
-              <a href="#">Laporan</a>
-              <div class="uk-navbar-dropdown">
-                <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li class="uk-active"><a href="#">Laporan 01</a></li>
-                  <li><a href="#">Laporan 02</a></li>
-                  <li><a href="#">Laporan 03</a></li>
-                </ul>
-              </div>
-            </li>
+            <li><a href="#">Laporan</a></li>
             <li><a href="">Berita &amp; Foto</a></li>
             <li><a href="">Hubungi</a></li>
             <li><a href="">Himapa</a></li>
@@ -48,17 +41,21 @@
 <style>
   .dp-header {
     padding-top: 15px;
-    background-color: #0547af;
+    background-color: #012f61;
+    padding-bottom: 20px;
   }
 
-  a.dp-logo {
+  .dp-navbar {
+    background-color: #2d79c4;
+  }
+
+  .dp-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
-
-  span.dp-logo__title {
+  .dp-logo__title {
     display: block;
     color: #fff;
     margin-left: 15px;
@@ -67,16 +64,14 @@
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: 0.5px;
-}
-  b.dp-logo__subtitle {
+  }
+
+  .dp-logo__subtitle {
     display: block;
     font-weight: 600;
     font-size: 1.3em;
     letter-spacing: 1.8px;
     line-height: 1;
     color: red;
-}
-
-
-
+  }
 </style>

@@ -1,8 +1,26 @@
 <template>
-  <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background: url('static/img/slide-06.jpg')">
+  <div class="dp-banner uk-height-large uk-overflow-hidden uk-light uk-flex uk-flex-top">
     <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-      <h1 uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; viewport: 0.5;">Headline</h1>
-      <p uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h1 class="dp-banner__title" uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; viewport: 0.5;">Headline</h1>
+      <p class="dp-banner__subtitle" uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
   </div>
 </template>
+
+<style>
+  h1.dp-banner__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #012f61;
+    line-height: 1.3em;
+  }
+
+  .dp-banner__subtitle {
+    background-color: #002042;
+    padding: 30px;
+    color: #7ac8ff;
+    font-size: 22px;
+  }
+</style>
