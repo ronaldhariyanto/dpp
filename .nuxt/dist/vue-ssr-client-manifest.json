@@ -8,27 +8,27 @@
     "img/slide-02.07971b4.jpg",
     "img/slide-03.0676abf.jpg",
     "img/slide-04.287fff5.jpg",
-    "layouts/default.047964313f50d532b26f.js",
+    "layouts/default.fb1846aa9ff59123a392.js",
     "pages/index.f565dd9f777a86fef054.js",
     "common.cb61b5f5335cbf49f557.js",
     "img/logo-dp-footer.e08e842.png",
-    "manifest.b859467001a53f36e880.js",
+    "manifest.676308146c0b0e2564c2.js",
     "LICENSES",
-    "layouts/default.047964313f50d532b26f.js.map",
+    "layouts/default.fb1846aa9ff59123a392.js.map",
     "pages/index.f565dd9f777a86fef054.js.map",
     "common.cb61b5f5335cbf49f557.js.map",
     "app.1b8cfb971572d1056d4a.js.map",
-    "manifest.b859467001a53f36e880.js.map",
+    "manifest.676308146c0b0e2564c2.js.map",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.b859467001a53f36e880.js",
+    "manifest.676308146c0b0e2564c2.js",
     "common.cb61b5f5335cbf49f557.js",
     "app.1b8cfb971572d1056d4a.js"
   ],
   "async": [
-    "layouts/default.047964313f50d532b26f.js",
+    "layouts/default.fb1846aa9ff59123a392.js",
     "pages/index.f565dd9f777a86fef054.js"
   ],
   "modules": {
@@ -138,13 +138,6 @@
       10,
       3
     ],
-    "072b361e": [
-      7,
-      13,
-      1,
-      10,
-      3
-    ],
     "fc27756e": [
       9,
       15
@@ -191,6 +184,13 @@
       4,
       5,
       6
+    ],
+    "a484fe86": [
+      7,
+      13,
+      1,
+      10,
+      3
     ],
     "1da7e6cb": [
       9,
@@ -273,14 +273,6 @@
       0,
       16
     ],
-    "461b02fa": [
-      0,
-      16
-    ],
-    "629e580d": [
-      9,
-      15
-    ],
     "423166b4": [
       9,
       15
@@ -294,13 +286,6 @@
       16
     ],
     "52f1ca59": [
-      7,
-      13,
-      1,
-      10,
-      3
-    ],
-    "b7fc8778": [
       7,
       13,
       1,
@@ -333,6 +318,13 @@
     "b93df02e": [
       9,
       15
+    ],
+    "adf0f132": [
+      7,
+      13,
+      1,
+      10,
+      3
     ],
     "73935b7d": [
       0,
@@ -501,9 +493,20 @@
       0,
       16
     ],
+    "4a9406e3": [
+      7,
+      13,
+      1,
+      10,
+      3
+    ],
     "783618ee": [
       9,
       15
+    ],
+    "461b02fa": [
+      0,
+      16
     ],
     "02936888": [
       9,
@@ -783,16 +786,13 @@
       10,
       3
     ],
-    "6f4a0e66": [
-      7,
-      13,
-      1,
-      10,
-      3
-    ],
     "cae00fca": [
       0,
       16
+    ],
+    "629e580d": [
+      9,
+      15
     ],
     "1c73b9f4": [
       0,

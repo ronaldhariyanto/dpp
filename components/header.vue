@@ -51,6 +51,13 @@
     background-color: #0547af;
   }
 
+  a.dp-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
   span.dp-logo__title {
     display: block;
     color: #fff;
@@ -72,8 +79,4 @@
 
 
 
-a.dp-logo {
-    display: flex;
-    align-items: center;
-}
 </style>
