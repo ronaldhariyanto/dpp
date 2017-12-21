@@ -2,6 +2,12 @@
 // Core
 //
 
-@import "variables.scss";
-@import "mixins.scss";
+// @import "variables.scss";
+// @import "mixins.scss";
+// @import "components/_import.scss";
+//
+
+@import "variables-theme.scss";
+@import "mixins-theme.scss";
+@import "theme/_import.scss";
 @import "components/_import.scss";

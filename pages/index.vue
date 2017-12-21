@@ -41,21 +41,25 @@
       <h3 class="uk-heading-line uk-text-center"><span>Berita Dana Pensiun Pertamina</span></h3>
       <div class="uk-child-width-1-2 uk-text-center" uk-grid>
         <div class="uk-grid-item-match">
-          <div class="uk-card uk-card-default uk-card-body">Item</div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h4>Temu Pendiri &amp; Mitra Pendiri 2017</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
         </div>
         <div>
           <div class="uk-child-width-1-2 uk-text-center" uk-grid>
             <div>
-              <div class="uk-card uk-card-primary uk-card-body">Item</div>
+              <div class="uk-card uk-card-primary uk-card-body">Pelepasan dan Pengukuhan Kepala Internal Audit</div>
             </div>
             <div>
-              <div class="uk-card uk-card-primary uk-card-body">Item</div>
+              <div class="uk-card uk-card-primary uk-card-body">Pelepasan dan Pengukuhan Manager Kepensiunan</div>
             </div>
             <div>
-              <div class="uk-card uk-card-primary uk-card-body">Item</div>
+              <div class="uk-card uk-card-primary uk-card-body">Ringkasan Kinerja DP Pertamina Tahun 2016</div>
             </div>
             <div>
-              <div class="uk-card uk-card-primary uk-card-body">Item</div>
+              <div class="uk-card uk-card-primary uk-card-body">Manfaat Pensiun Sekaligus</div>
             </div>
           </div>
         </div>
