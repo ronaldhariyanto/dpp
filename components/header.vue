@@ -50,25 +50,27 @@
     padding-top: 15px;
     background-color: #0547af;
   }
+
+  span.dp-logo__title {
+    display: block;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
   b.dp-logo__subtitle {
     display: block;
     font-weight: 600;
     font-size: 1.3em;
-    letter-spacing: 0.4px;
+    letter-spacing: 1.8px;
     line-height: 1;
     color: red;
 }
 
-span.dp-logo__title {
-    display: block;
-    color: #fff;
-    margin-left: 15px;
-    font-size: 22px;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 1;
-    letter-spacing: 0.5px;
-}
+
 
 a.dp-logo {
     display: flex;
