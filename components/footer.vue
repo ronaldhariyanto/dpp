@@ -3,14 +3,14 @@
     <div class="dp-footer">
       <div class="uk-container uk-padding">
         <div class="" uk-grid>
-          <div class="uk-width-1-6">
+          <div class="uk-width-1-6@m">
             <div class="dp-footer-logo">
               <img src="~/static/img/logo-dp-footer.png" alt="">
               <span class="uk-margin-small-top dp-footer-logo__title">Dana Pensiun</span>
               <span class="uk-margin-small-bottom dp-footer-logo__subtitle">Pertamina</span>
             </div>
           </div>
-          <div class="uk-width-1-4">
+          <div class="uk-width-1-4@m">
             <div class="">
               <h4>Contact Us</h4>
               <p>Jl. M.I Ridwan Rais No.7A
@@ -24,7 +24,7 @@
               </ul>
             </div>
           </div>
-          <div class="uk-width-1-6">
+          <div class="uk-width-1-6@m">
             <div class="">
               <h4>Informasi</h4>
               <ul class="uk-list">
@@ -35,7 +35,7 @@
               </ul>
             </div>
           </div>
-          <div class="uk-width-1-6">
+          <div class="uk-width-1-6@m">
             <div class="">
               <h4>Laporan</h4>
               <ul class="uk-list">
@@ -46,7 +46,7 @@
               </ul>
             </div>
           </div>
-          <div class="uk-width-1-4">
+          <div class="uk-width-1-4@m">
             <h4>Follow us on:</h4>
             <div class="uk-flex">
               <a href="" class="uk-margin-small-right" >
