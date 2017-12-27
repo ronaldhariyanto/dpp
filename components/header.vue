@@ -14,14 +14,14 @@
       <nav class="uk-container uk-navbar-container uk-navbar-transparent uk-navbar" uk-navbar>
         <div class="uk-navbar-left">
           <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="">Home</a></li>
-            <li><a href="">Tentang Kami</a></li>
-            <li><a href="">Informasi</a></li>
-            <li><a href="#">Laporan</a></li>
-            <li><a href="">Berita &amp; Foto</a></li>
-            <li><a href="">Hubungi</a></li>
-            <li><a href="">Himapa</a></li>
-            <li><a href="">Forum</a></li>
+            <li><nuxt-link to="/">Home</nuxt-link></li>
+            <li><nuxt-link to="/tentang-kami">Tentang Kami</nuxt-link></li>
+            <li><nuxt-link to="/informasi">Informasi</nuxt-link></li>
+            <li><nuxt-link to="/laporan">Laporan</nuxt-link></li>
+            <li><nuxt-link to="/berita">Berita &amp; Foto</nuxt-link></li>
+            <li><nuxt-link to="/hubungi">Hubungi</nuxt-link></li>
+            <li><nuxt-link to="/himpana">Himpana</nuxt-link></li>
+            <li><nuxt-link to="/forum">Forum</nuxt-link></li>
           </ul>
         </div>
         <div class="uk-navbar-right">
@@ -38,7 +38,7 @@
   </section>
 </template>
 
-<style>
+<style lang="scss">
   .dp-header {
     padding-top: 15px;
     background-color: #012f61;
@@ -53,25 +53,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
 
-  .dp-logo__title {
-    display: block;
-    color: #fff;
-    margin-left: 15px;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: 0.5px;
-  }
+    &__title {
+      display: block;
+      color: #fff;
+      margin-left: 15px;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: 0.5px;
+    }
 
-  .dp-logo__subtitle {
-    display: block;
-    font-weight: 600;
-    font-size: 1.3em;
-    letter-spacing: 1.8px;
-    line-height: 1;
-    color: red;
+    &__subtitle {
+      display: block;
+      font-weight: 600;
+      font-size: 1.3em;
+      letter-spacing: 1.8px;
+      line-height: 1;
+      color: red;
+    }
   }
 </style>

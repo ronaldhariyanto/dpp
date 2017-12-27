@@ -1,0 +1,2 @@
+webpackJsonp([5],{"3njJ":function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r=t("GYga"),l=t("VU/8"),u=l(null,r.a,!1,null,null,null);n.default=u.exports},GYga:function(e,n,t){"use strict";var r=function(){var e=this,n=e.$createElement;return(e._self._c||n)("section",{})},l=[],u={render:r,staticRenderFns:l};n.a=u}});
+//# sourceMappingURL=hubungi.edca28c6d6dbe7518688.js.map

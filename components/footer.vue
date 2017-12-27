@@ -26,23 +26,23 @@
           </div>
           <div class="uk-width-1-6">
             <div class="">
-              <h4>Quick Link</h4>
+              <h4>Informasi</h4>
               <ul class="uk-list">
-                <li><a href="">Quick Link #1</a></li>
-                <li><a href="">Quick Link #2</a></li>
-                <li><a href="">Quick Link #3</a></li>
-                <li><a href="">Quick Link #4</a></li>
+                <li><a href="">Peraturan</a></li>
+                <li><a href="">Prosedur</a></li>
+                <li><a href="">Majalah Bina</a></li>
+                <li><a href="">Links</a></li>
               </ul>
             </div>
           </div>
           <div class="uk-width-1-6">
             <div class="">
-              <h4>Quick Link</h4>
+              <h4>Laporan</h4>
               <ul class="uk-list">
-                <li><a href="">Quick Link #1</a></li>
-                <li><a href="">Quick Link #2</a></li>
-                <li><a href="">Quick Link #3</a></li>
-                <li><a href="">Quick Link #4</a></li>
+                <li><a href="">Laporan Keuangan</a></li>
+                <li><a href="">Laporan Tahunan</a></li>
+                <li><a href="">Cetak E-SPT</a></li>
+                <li><a href="">Simulasi</a></li>
               </ul>
             </div>
           </div>
@@ -68,53 +68,53 @@
     </div>
     <div class="dp-footer__copyright ">
       <div class="container uk-text-center uk-padding-small">
-        Copyright &copy; 2017 Dana Pensiun Pertamina. All rights reserved.
+        Copyright &copy; 2017 Dana Pensiun Pertamina. All Rights Reserved.
       </div>
     </div>
   </footer>
 </template>
 
-<style>
+<style lang="scss">
   .dp-footer {
     background-color: #002042;
     color: #7ac8ff;
-  }
 
-  .dp-footer h4 {
-    color:  #2d79c4;
-  }
+    h4 {
+      color:  #2d79c4;
+    }
 
-  .dp-footer a {
-    color:  #fff;
-  }
+    a {
+      color:  #fff;
+    }
 
-  .dp-footer-logo {
+    &-logo {
     text-align: center;
-}
 
-span.dp-footer-logo__title {
-    display: block;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 1;
-    color: red;
-    font-size: 14px;
-}
+      &__title {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 1;
+        color: red;
+        font-size: 14px;
+      }
 
-span.dp-footer-logo__subtitle {
-    display: block;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 1;
-    color: #fff;
-    font-size: 1.3em;
-    line-height: 1.3;
-}
+      &__subtitle {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 1;
+        color: #fff;
+        font-size: 1.3em;
+        line-height: 1.3;
+      }
+    }
 
-.dp-footer__copyright {
-  background: #002042;
-    color: #7ac8ff;
-    font-size: 90%;
-    border-top: 1px dotted #024793;
-}
+    &__copyright {
+      background: #002042;
+      color: #7ac8ff;
+      font-size: 90%;
+      border-top: 1px dotted #024793;
+    }
+  }
 </style>

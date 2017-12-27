@@ -93,11 +93,10 @@
         <div class="uk-child-width-1-2" uk-grid>
           <div class="uk-grid-item-match">
             <div class="uk-card uk-card-default">
-              <img src="http://via.placeholder.com/600x500" alt="">
+              <img src="~/static/img/content/berita-01.jpg" alt="" class="uk-width-1-1">
               <div class="uk-card-body">
                 <h4>Temu Pendiri &amp; Mitra Pendiri 2017</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>
@@ -105,7 +104,9 @@
             <div class="uk-child-width-1-2" uk-grid>
               <div class="uk-grid-item-match">
                 <div class="uk-card uk-card-default">
-                  <img src="http://via.placeholder.com/300x200" alt="">
+                  <div>
+                    <img src="~/static/img/content/berita-02.jpg" alt="" class="uk-width-1-1">
+                  </div>
                   <div class="uk-padding-small">
                     <h4>Pelepasan dan Pengukuhan Kepala Internal Audit</h4>
                   </div>
@@ -113,7 +114,9 @@
               </div>
               <div class="uk-grid-item-match">
                 <div class="uk-card uk-card-default">
-                  <img src="http://via.placeholder.com/300x200" alt="">
+                  <div>
+                    <img src="~/static/img/content/berita-03.jpg" alt="" class="uk-width-1-1">
+                  </div>
                   <div class="uk-padding-small">
                     <h4>Pelepasan dan Pengukuhan Manager Kepensiunan</h4>
                   </div>
@@ -121,7 +124,9 @@
               </div>
               <div class="uk-grid-item-match">
                 <div class="uk-card uk-card-default">
-                  <img src="http://via.placeholder.com/300x200" alt="">
+                  <div>
+                    <img src="~/static/img/content/berita-04.jpg" alt="" class="uk-width-1-1">
+                  </div>
                   <div class="uk-padding-small">
                     <h4>Ringkasan Kinerja DP Pertamina Tahun 2016</h4>
                   </div>
@@ -129,7 +134,9 @@
               </div>
               <div class="uk-grid-item-match">
                 <div class="uk-card uk-card-default">
-                  <img src="http://via.placeholder.com/300x200" alt="">
+                  <div>
+                    <img src="~/static/img/content/berita-04.jpg" alt="" class="uk-width-1-1">
+                  </div>
                   <div class="uk-padding-small">
                     <h4>Manfaat Pensiun Sekaligus</h4>
                   </div>
