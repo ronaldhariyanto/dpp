@@ -90,7 +90,7 @@
       <div class="uk-container">
         <h3 class="dp-heading uk-text-center">Berita Dana Pensiun Pertamina</h3>
         <div class="dp-divider uk-margin-medium-bottom"></div>
-        <div class="uk-child-width-1-2" uk-grid>
+        <div class="uk-child-width-1-2@m" uk-grid>
           <div class="uk-grid-item-match">
             <div class="uk-card uk-card-default">
               <img src="~/static/img/content/berita-01.jpg" alt="" class="uk-width-1-1">
@@ -101,7 +101,7 @@
             </div>
           </div>
           <div class="uk-grid-item-match">
-            <div class="uk-child-width-1-2" uk-grid>
+            <div class="uk-child-width-1-2@m" uk-grid>
               <div class="uk-grid-item-match">
                 <div class="uk-card uk-card-default">
                   <div>
