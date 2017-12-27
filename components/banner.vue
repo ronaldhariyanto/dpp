@@ -8,13 +8,15 @@
 </template>
 
 <style lang="scss">
+  h1.dp-banner__title {
+    color: #012f61;
+  }
   .dp-banner {
     &__title {
       font-family: "Montserrat", sans-serif;
       font-size: 50px;
       font-weight: 600;
       letter-spacing: -1px;
-      color: #012f61;
       line-height: 1.3em;
     }
 
