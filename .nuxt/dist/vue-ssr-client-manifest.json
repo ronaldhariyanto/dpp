@@ -26,49 +26,49 @@
     "img/slide-00.aa8dca1.jpg",
     "img/slide-04.287fff5.jpg",
     "img/icon-penting.0150e72.svg",
-    "pages/index.008a32e87f9730cb82b9.js",
+    "pages/index.53bc197bf41bc24c17eb.js",
     "img/logo-dp-header.ab16d72.png",
-    "pages/tentang-kami.348dee8ab629ead37ee8.js",
-    "pages/laporan.bb5b7fb1def772164028.js",
-    "pages/informasi.71e071abb86a6e57f872.js",
-    "pages/hubungi.edca28c6d6dbe7518688.js",
-    "pages/himpana.27ce106a5211c8684573.js",
-    "pages/forum.d4c85d1844a463175842.js",
-    "pages/berita.fc7e6bac319f35d8b898.js",
+    "pages/tentang-kami.2977a44f12ded5a8f0e2.js",
+    "pages/laporan.6510b2fadcd651d60f53.js",
+    "pages/informasi.c2540a37fbedfd7289c8.js",
+    "pages/hubungi.9e483f037db843ae8d7b.js",
+    "pages/himpana.7ca7b6e3560b26d47764.js",
+    "pages/forum.ca7f032576114c67be93.js",
+    "pages/berita.3bc87819d1ef0cd2e993.js",
     "common.51b6cd7e9e229fbcd675.js",
     "app.945da70cb147db7ccdb7.js",
-    "manifest.90c7cd7ec6ff93ed5f46.js",
+    "manifest.2a75e068547d38222c3b.js",
     "LICENSES",
-    "pages/index.008a32e87f9730cb82b9.js.map",
+    "pages/index.53bc197bf41bc24c17eb.js.map",
     "layouts/default.12d84bbc065a21193e8f.js.map",
-    "pages/tentang-kami.348dee8ab629ead37ee8.js.map",
-    "pages/laporan.bb5b7fb1def772164028.js.map",
-    "pages/informasi.71e071abb86a6e57f872.js.map",
-    "pages/hubungi.edca28c6d6dbe7518688.js.map",
-    "pages/himpana.27ce106a5211c8684573.js.map",
-    "pages/forum.d4c85d1844a463175842.js.map",
-    "pages/berita.fc7e6bac319f35d8b898.js.map",
+    "pages/tentang-kami.2977a44f12ded5a8f0e2.js.map",
+    "pages/laporan.6510b2fadcd651d60f53.js.map",
+    "pages/informasi.c2540a37fbedfd7289c8.js.map",
+    "pages/hubungi.9e483f037db843ae8d7b.js.map",
+    "pages/himpana.7ca7b6e3560b26d47764.js.map",
+    "pages/forum.ca7f032576114c67be93.js.map",
+    "pages/berita.3bc87819d1ef0cd2e993.js.map",
     "common.51b6cd7e9e229fbcd675.js.map",
     "app.945da70cb147db7ccdb7.js.map",
-    "manifest.90c7cd7ec6ff93ed5f46.js.map",
+    "manifest.2a75e068547d38222c3b.js.map",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.90c7cd7ec6ff93ed5f46.js",
+    "manifest.2a75e068547d38222c3b.js",
     "common.51b6cd7e9e229fbcd675.js",
     "app.945da70cb147db7ccdb7.js"
   ],
   "async": [
     "layouts/default.12d84bbc065a21193e8f.js",
-    "pages/index.008a32e87f9730cb82b9.js",
-    "pages/tentang-kami.348dee8ab629ead37ee8.js",
-    "pages/laporan.bb5b7fb1def772164028.js",
-    "pages/informasi.71e071abb86a6e57f872.js",
-    "pages/hubungi.edca28c6d6dbe7518688.js",
-    "pages/himpana.27ce106a5211c8684573.js",
-    "pages/forum.d4c85d1844a463175842.js",
-    "pages/berita.fc7e6bac319f35d8b898.js"
+    "pages/index.53bc197bf41bc24c17eb.js",
+    "pages/tentang-kami.2977a44f12ded5a8f0e2.js",
+    "pages/laporan.6510b2fadcd651d60f53.js",
+    "pages/informasi.c2540a37fbedfd7289c8.js",
+    "pages/hubungi.9e483f037db843ae8d7b.js",
+    "pages/himpana.7ca7b6e3560b26d47764.js",
+    "pages/forum.ca7f032576114c67be93.js",
+    "pages/berita.3bc87819d1ef0cd2e993.js"
   ],
   "modules": {
     "42090453": [
@@ -171,10 +171,6 @@
       34,
       47
     ],
-    "f65af60a": [
-      33,
-      46
-    ],
     "a27fd4ec": [
       35,
       48
@@ -258,32 +254,6 @@
       34,
       47
     ],
-    "004e0b91": [
-      25,
-      38,
-      1,
-      2,
-      4,
-      5,
-      6,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24
-    ],
     "ea115b82": [
       0,
       39,
@@ -343,6 +313,10 @@
     "ae5f33ee": [
       32,
       45
+    ],
+    "40969cf5": [
+      30,
+      43
     ],
     "c1597c86": [
       34,
@@ -446,6 +420,32 @@
       34,
       47
     ],
+    "d6f054be": [
+      25,
+      38,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
     "df437c6a": [
       34,
       47
@@ -474,14 +474,6 @@
       34,
       47
     ],
-    "4513b5a2": [
-      27,
-      40
-    ],
-    "547bfcad": [
-      31,
-      44
-    ],
     "3a6fdb1d": [
       35,
       48
@@ -493,6 +485,10 @@
     "3cb237c8": [
       34,
       47
+    ],
+    "5e5e6c54": [
+      28,
+      41
     ],
     "0970fa0a": [
       34,
@@ -524,10 +520,6 @@
     "ad09d45a": [
       34,
       47
-    ],
-    "0cc5ca98": [
-      30,
-      43
     ],
     "cddbd884": [
       35,
@@ -826,13 +818,13 @@
       34,
       47
     ],
-    "67acc95b": [
-      29,
-      42
-    ],
     "00f6a57a": [
       34,
       47
+    ],
+    "a123e378": [
+      29,
+      42
     ],
     "046f388e": [
       25,
@@ -1071,6 +1063,10 @@
       35,
       48
     ],
+    "26d0ba00": [
+      33,
+      46
+    ],
     "3879261c": [
       34,
       47
@@ -1133,36 +1129,6 @@
       26,
       3,
       7
-    ],
-    "21d1a100": [
-      28,
-      41
-    ],
-    "ed14b392": [
-      25,
-      38,
-      1,
-      2,
-      4,
-      5,
-      6,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24
     ],
     "12091a2c": [
       34,
@@ -1295,6 +1261,10 @@
       34,
       47
     ],
+    "acf4a1ea": [
+      31,
+      44
+    ],
     "499f9ea4": [
       34,
       47
@@ -1324,6 +1294,32 @@
       47
     ],
     "09e3c4f1": [
+      25,
+      38,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "34f53bde": [
       25,
       38,
       1,
@@ -1391,14 +1387,6 @@
       34,
       47
     ],
-    "9114819a": [
-      34,
-      47
-    ],
-    "629e580d": [
-      34,
-      47
-    ],
     "a4f0236c": [
       35,
       48
@@ -1410,6 +1398,10 @@
     "773bb34e": [
       34,
       47
+    ],
+    "f93357e8": [
+      32,
+      45
     ],
     "4145e28c": [
       34,
@@ -1577,6 +1569,10 @@
       34,
       47
     ],
+    "1d8f7750": [
+      27,
+      40
+    ],
     "6e765917": [
       35,
       48
@@ -1594,6 +1590,14 @@
       47
     ],
     "2ea74f9e": [
+      34,
+      47
+    ],
+    "1c73b9f4": [
+      35,
+      48
+    ],
+    "629e580d": [
       34,
       47
     ],
@@ -1630,6 +1634,10 @@
       22,
       23,
       24
+    ],
+    "9114819a": [
+      34,
+      47
     ],
     "57c0a07f": [
       35,
@@ -1677,10 +1685,6 @@
       35,
       48
     ],
-    "1c73b9f4": [
-      35,
-      48
-    ],
     "09148820": [
       34,
       47
@@ -1693,19 +1697,11 @@
       34,
       47
     ],
-    "137298aa": [
-      32,
-      45
-    ],
     "b40b963a": [
       34,
       47
     ],
-    "693f5fef": [
-      33,
-      46
-    ],
-    "70286af5": [
+    "901b2972": [
       25,
       38,
       1,
@@ -1730,6 +1726,10 @@
       22,
       23,
       24
+    ],
+    "693f5fef": [
+      33,
+      46
     ],
     "47351b28": [
       34,

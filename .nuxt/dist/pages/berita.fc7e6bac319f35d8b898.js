@@ -1,2 +1,0 @@
-webpackJsonp([8],{"0EAc":function(e,n,t){"use strict";var c=function(){var e=this,n=e.$createElement;return(e._self._c||n)("section",{})},l=[],r={render:c,staticRenderFns:l};n.a=r},z8cl:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var c=t("0EAc"),l=t("VU/8"),r=l(null,c.a,!1,null,null,null);n.default=r.exports}});
-//# sourceMappingURL=berita.fc7e6bac319f35d8b898.js.map

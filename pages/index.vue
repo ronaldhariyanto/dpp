@@ -151,48 +151,37 @@
       <div class="uk-container">
         <h3 class="dp-heading uk-text-center">Galeri Kegiatan</h3>
         <div class="dp-divider uk-margin-medium-bottom"></div>
-        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-3@l uk-text-center" uk-grid-parallax="translate:100">
+
+        <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: fade" uk-grid-parallax="translate:100">
           <div>
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top">
-                <img src="~/static/img/slide/23.jpg" alt="">
-              </div>
-            </div>
+              <a class="uk-inline" href="~/static/img/slide/23.jpg" caption="Caption 1">
+                  <img src="~/static/img/slide/23.jpg" alt="">
+              </a>
           </div>
           <div>
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top">
-                <img src="~/static/img/slide/24.jpg" alt="">
-              </div>
-            </div>
+              <a class="uk-inline" href="~/static/img/slide/24.jpg" caption="Caption 2">
+                  <img src="~/static/img/slide/24.jpg" alt="">
+              </a>
           </div>
           <div>
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top">
-                <img src="~/static/img/slide/25.jpg" alt="">
-              </div>
-            </div>
+              <a class="uk-inline" href="~/static/img/slide/25.jpg" caption="Caption 3">
+                  <img src="~/static/img/slide/25.jpg" alt="">
+              </a>
           </div>
           <div>
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top">
-                <img src="~/static/img/slide/26.jpg" alt="">
-              </div>
-            </div>
+              <a class="uk-inline" href="~/static/img/slide/26.jpg" caption="Caption 3">
+                  <img src="~/static/img/slide/26.jpg" alt="">
+              </a>
           </div>
           <div>
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top">
-                <img src="~/static/img/slide/27.jpg" alt="">
-              </div>
-            </div>
+              <a class="uk-inline" href="~/static/img/slide/27.jpg" caption="Caption 3">
+                  <img src="~/static/img/slide/27.jpg" alt="">
+              </a>
           </div>
           <div>
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top">
-                <img src="~/static/img/slide/28.jpg" alt="">
-              </div>
-            </div>
+              <a class="uk-inline" href="~/static/img/slide/28.jpg" caption="Caption 3">
+                  <img src="~/static/img/slide/28.jpg" alt="">
+              </a>
           </div>
         </div>
       </div>
@@ -202,7 +191,7 @@
   </section>
 </template>
 
-<style>
+<style lang="scss">
 
   .dp-front-page {
     background: url('~/static/img/intro_bg.png') no-repeat right bottom;
@@ -216,8 +205,8 @@
   }
 
   .dp-heading {
-        font-family: "Montserrat", sans-serif;
-        font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
     font-weight: 600;
     letter-spacing: -1px;
     color: #012f61;
@@ -265,33 +254,61 @@
     padding: 30px 30px;
     background-color: #f8f8f8;
     position: relative;
+    -webkit-transition: background-color 0.5s ease-in-out;
     transition: background-color 0.5s ease-in-out;
     overflow: hidden;
-  }
 
-  .block-service_item-icon {
-    font-size: 60px;
-    color: #7ac8ff;
-  }
+    &-title h3 {
+      font-size: 24px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      line-height: 1.3em;
+      color: #2d79c4;
+    }
 
-  .block-service_item-title h3 {
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    line-height: 1.3em;
-    color: #2d79c4;
-  }
+    &-icon {
+      font-size: 60px;
+      color: #7ac8ff;
+    }
 
-  .block-service_item-desc {
-    display: none;
-  }
+    &-bgicon {
+      position: absolute;
+      top: -30%;
+      right: -30%;
+      font-size: 200px;
+      opacity: 0.1;
+    }
 
-  .block-service_item-bgicon {
-    position: absolute;
-    top: -30%;
-    right: -30%;
-    font-size: 200px;
-    opacity: 0.1;
+    &-desc {
+      display: none;
+    }
+
+    .button {
+      letter-spacing: 0;
+    }
+
+    &:hover,
+    &.active {
+      background: #012f61;
+
+      .block-service_item-desc {
+        display: block;
+        color: #FFFFFF;
+        margin-top: 25px;
+      }
+
+      .block-service_item-icon {
+        display: none;
+      }
+
+      .block-service_item-bgicon {
+        opacity: 0.2;
+      }
+
+      h3 {
+        color: #FFFFFF;
+      }
+    }
   }
 </style>
 
