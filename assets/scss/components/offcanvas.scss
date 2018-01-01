@@ -29,7 +29,7 @@ $offcanvas-z-index:                              $global-z-index !default;
 $offcanvas-bar-width:                            270px !default;
 $offcanvas-bar-padding-vertical:                 $global-margin !default;
 $offcanvas-bar-padding-horizontal:               $global-margin !default;
-$offcanvas-bar-background:                       $global-secondary-background !default;
+$offcanvas-bar-background:                       #286db3 !default;
 $offcanvas-bar-color-mode:                       light !default;
 
 $offcanvas-bar-width-m:                          350px !default;
@@ -92,7 +92,7 @@ $offcanvas-overlay-background:                   rgba(0,0,0,0.1) !default;
     box-sizing: border-box;
     width: $offcanvas-bar-width;
     padding: $offcanvas-bar-padding-vertical $offcanvas-bar-padding-horizontal;
-    background: $offcanvas-bar-background;
+    background: #286db3;
     /* 3 */
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;

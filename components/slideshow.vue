@@ -6,9 +6,9 @@
         <div class="uk-position-center-left uk-position-large">
           <div class="dp-slide-box uk-padding uk-width-5-6">
             <h2 uk-slideshow-parallax="x: 100,-100">Temu Pendiri &amp; Mitra Pendiri 2017</h2>
-            <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <p uk-slideshow-parallax="x: 200,-200" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="uk-button uk-button-primary uk-margin-medium-top">view more</a>
+            <a href="" class="uk-button uk-button-primary uk-margin-medium-top uk-visible@m">view more</a>
           </div>
         </div>
       </li>
@@ -17,9 +17,9 @@
         <div class="uk-position-center-left uk-position-large">
           <div class="dp-slide-box uk-padding uk-width-5-6">
             <h2 uk-slideshow-parallax="x: 100,-100">Temu Pendiri &amp; Mitra Pendiri 2016</h2>
-            <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <p uk-slideshow-parallax="x: 200,-200" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="uk-button uk-button-primary uk-margin-medium-top">view more</a>
+            <a href="" class="uk-button uk-button-primary uk-margin-medium-top uk-visible@m">view more</a>
           </div>
         </div>
       </li>
@@ -28,9 +28,9 @@
         <div class="uk-position-center-left uk-position-large">
           <div class="dp-slide-box uk-padding uk-width-5-6">
             <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Temu Pendiri &amp; Mitra Pendiri 2015</h2>
-            <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="uk-button uk-button-primary uk-margin-medium-top">view more</a>
+            <a href="" class="uk-button uk-button-primary uk-margin-medium-top uk-visible@m">view more</a>
           </div>
         </div>
       </li>
@@ -39,9 +39,9 @@
         <div class="uk-position-center-left uk-position-large">
           <div class="dp-slide-box uk-padding uk-width-5-6">
             <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Temu Pendiri &amp; Mitra Pendiri 2014</h2>
-            <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="uk-button uk-button-primary uk-margin-medium-top">view more</a>
+            <a href="" class="uk-button uk-button-primary uk-margin-medium-top uk-visible@m">view more</a>
           </div>
         </div>
       </li>

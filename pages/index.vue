@@ -154,34 +154,34 @@
 
         <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: fade" uk-grid-parallax="translate:100">
           <div>
-              <a class="uk-inline" href="~/static/img/slide/23.jpg" caption="Caption 1">
-                  <img src="~/static/img/slide/23.jpg" alt="">
-              </a>
+            <a class="uk-inline" data-type="image" href="~/static/img/slide/23.jpg" caption="Caption 1">
+              <img src="~/static/img/slide/23.jpg" alt="">
+            </a>
           </div>
           <div>
-              <a class="uk-inline" href="~/static/img/slide/24.jpg" caption="Caption 2">
-                  <img src="~/static/img/slide/24.jpg" alt="">
-              </a>
+            <a class="uk-inline" data-type="image" href="~/static/img/slide/24.jpg" caption="Caption 2">
+              <img src="~/static/img/slide/24.jpg" alt="">
+            </a>
           </div>
           <div>
-              <a class="uk-inline" href="~/static/img/slide/25.jpg" caption="Caption 3">
-                  <img src="~/static/img/slide/25.jpg" alt="">
-              </a>
+            <a class="uk-inline" data-type="image" href="~/static/img/slide/25.jpg" caption="Caption 3">
+              <img src="~/static/img/slide/25.jpg" alt="">
+            </a>
           </div>
           <div>
-              <a class="uk-inline" href="~/static/img/slide/26.jpg" caption="Caption 3">
-                  <img src="~/static/img/slide/26.jpg" alt="">
-              </a>
+            <a class="uk-inline" data-type="image" href="~/static/img/slide/26.jpg" caption="Caption 3">
+              <img src="~/static/img/slide/26.jpg" alt="">
+            </a>
           </div>
           <div>
-              <a class="uk-inline" href="~/static/img/slide/27.jpg" caption="Caption 3">
-                  <img src="~/static/img/slide/27.jpg" alt="">
-              </a>
+            <a class="uk-inline" data-type="image" href="~/static/img/slide/27.jpg" caption="Caption 3">
+              <img src="~/static/img/slide/27.jpg" alt="">
+            </a>
           </div>
           <div>
-              <a class="uk-inline" href="~/static/img/slide/28.jpg" caption="Caption 3">
-                  <img src="~/static/img/slide/28.jpg" alt="">
-              </a>
+            <a class="uk-inline" href="~/static/img/slide/28.jpg" caption="Caption 3">
+              <img src="~/static/img/slide/28.jpg" alt="">
+            </a>
           </div>
         </div>
       </div>
@@ -196,7 +196,6 @@
   .dp-front-page {
     background: url('~/static/img/intro_bg.png') no-repeat right bottom;
     background-size: 100%;
-
   }
 
   .dp-hotnews {
@@ -226,10 +225,6 @@
     border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
     padding: 60px 0;
-  }
-
-  .dp-heading {
-
   }
 
   .dp-icons-front {
@@ -313,13 +308,13 @@
 </style>
 
 <script>
-import Slideshow from '~/components/slideshow.vue';
-import Banner from '~/components/banner.vue';
+import Slideshow from '~/components/slideshow.vue'
+import Banner from '~/components/banner.vue'
 
 export default {
   components: {
     Slideshow,
-    Banner,
-  },
-};
+    Banner
+  }
+}
 </script>

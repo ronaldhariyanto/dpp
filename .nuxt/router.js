@@ -4,13 +4,14 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const _08e38e60 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
-const _9dfabb44 = () => import('../pages/tentang-kami.vue' /* webpackChunkName: "pages/tentang-kami" */).then(m => m.default || m)
-const _272f22fc = () => import('../pages/informasi.vue' /* webpackChunkName: "pages/informasi" */).then(m => m.default || m)
-const _1c4f8cbe = () => import('../pages/hubungi.vue' /* webpackChunkName: "pages/hubungi" */).then(m => m.default || m)
-const _997d99a2 = () => import('../pages/forum.vue' /* webpackChunkName: "pages/forum" */).then(m => m.default || m)
-const _a62f90ee = () => import('../pages/berita.vue' /* webpackChunkName: "pages/berita" */).then(m => m.default || m)
-const _5c3951fe = () => import('../pages/himpana.vue' /* webpackChunkName: "pages/himpana" */).then(m => m.default || m)
 const _5f82560e = () => import('../pages/laporan.vue' /* webpackChunkName: "pages/laporan" */).then(m => m.default || m)
+const _5c3951fe = () => import('../pages/himpana.vue' /* webpackChunkName: "pages/himpana" */).then(m => m.default || m)
+const _a62f90ee = () => import('../pages/berita.vue' /* webpackChunkName: "pages/berita" */).then(m => m.default || m)
+const _997d99a2 = () => import('../pages/forum.vue' /* webpackChunkName: "pages/forum" */).then(m => m.default || m)
+const _1c4f8cbe = () => import('../pages/hubungi.vue' /* webpackChunkName: "pages/hubungi" */).then(m => m.default || m)
+const _272f22fc = () => import('../pages/informasi.vue' /* webpackChunkName: "pages/informasi" */).then(m => m.default || m)
+const _cd512b3e = () => import('../pages/tentang-kami/index.vue' /* webpackChunkName: "pages/tentang-kami/index" */).then(m => m.default || m)
+const _635a7d82 = () => import('../pages/tentang-kami/sejarah.vue' /* webpackChunkName: "pages/tentang-kami/sejarah" */).then(m => m.default || m)
 
 
 
@@ -52,29 +53,9 @@ export function createRouter () {
 			name: "index"
 		},
 		{
-			path: "/tentang-kami",
-			component: _9dfabb44,
-			name: "tentang-kami"
-		},
-		{
-			path: "/informasi",
-			component: _272f22fc,
-			name: "informasi"
-		},
-		{
-			path: "/hubungi",
-			component: _1c4f8cbe,
-			name: "hubungi"
-		},
-		{
-			path: "/forum",
-			component: _997d99a2,
-			name: "forum"
-		},
-		{
-			path: "/berita",
-			component: _a62f90ee,
-			name: "berita"
+			path: "/laporan",
+			component: _5f82560e,
+			name: "laporan"
 		},
 		{
 			path: "/himpana",
@@ -82,9 +63,34 @@ export function createRouter () {
 			name: "himpana"
 		},
 		{
-			path: "/laporan",
-			component: _5f82560e,
-			name: "laporan"
+			path: "/berita",
+			component: _a62f90ee,
+			name: "berita"
+		},
+		{
+			path: "/forum",
+			component: _997d99a2,
+			name: "forum"
+		},
+		{
+			path: "/hubungi",
+			component: _1c4f8cbe,
+			name: "hubungi"
+		},
+		{
+			path: "/informasi",
+			component: _272f22fc,
+			name: "informasi"
+		},
+		{
+			path: "/tentang-kami",
+			component: _cd512b3e,
+			name: "tentang-kami"
+		},
+		{
+			path: "/tentang-kami/sejarah",
+			component: _635a7d82,
+			name: "tentang-kami-sejarah"
 		}
     ],
     fallback: false
