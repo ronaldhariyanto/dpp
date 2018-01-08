@@ -152,7 +152,7 @@
         <h3 class="dp-heading uk-text-center">Galeri Kegiatan</h3>
         <div class="dp-divider uk-margin-medium-bottom"></div>
 
-        <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: fade" uk-grid-parallax="translate:100">
+        <div class="uk-child-width-1-3@m uk-grid" uk-grid uk-lightbox="animation: fade">
           <div>
             <a class="uk-inline" data-type="image" href="~/static/img/slide/23.jpg" caption="Caption 1">
               <img src="~/static/img/slide/23.jpg" alt="">
@@ -303,6 +303,12 @@
       h3 {
         color: #FFFFFF;
       }
+    }
+  }
+
+  .dp-news-front {
+    .uk-card {
+      border: 2px solid #e0e0e0;
     }
   }
 </style>

@@ -3,7 +3,7 @@
     <div class="dp-header uk-visible@m">
       <div class="uk-container">
         <div class="dp-logo">
-          <img src="~/static/img/logo-dp-header.png" alt="">
+          <img src="~/static/img/logo-dpp.png" alt="DP Pertamina">
           <span class="dp-logo__title">Dana Pensiun
             <b class="dp-logo__subtitle">Pertamina</b>
           </span>
@@ -59,9 +59,9 @@
 
 <style lang="scss">
   .dp-header {
-    padding-top: 15px;
+    padding-top: 10px;
     background-color: #012f61;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .dp-navbar {
@@ -72,6 +72,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    img {
+      height: 60px;
+    }
 
     &__title {
       display: block;

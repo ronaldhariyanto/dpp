@@ -1,5 +1,5 @@
 <template>
-  <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
+  <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push; ratio: 7:2">
     <ul class="uk-slideshow-items">
       <li>
         <img src="~/static/img/slide-00.jpg" alt="" uk-cover>
@@ -8,7 +8,7 @@
             <h2 uk-slideshow-parallax="x: 100,-100">Temu Pendiri &amp; Mitra Pendiri 2017</h2>
             <p uk-slideshow-parallax="x: 200,-200" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="uk-button uk-button-primary uk-margin-medium-top uk-visible@m">view more</a>
+            <a href="" class="uk-button uk-button-primary uk-margin-small-top uk-visible@m">view more</a>
           </div>
         </div>
       </li>
@@ -16,10 +16,21 @@
         <img src="~/static/img/slide-01.jpg" alt="" uk-cover>
         <div class="uk-position-center-left uk-position-large">
           <div class="dp-slide-box uk-padding uk-width-5-6">
-            <h2 uk-slideshow-parallax="x: 100,-100">Temu Pendiri &amp; Mitra Pendiri 2016</h2>
-            <p uk-slideshow-parallax="x: 200,-200" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Temu Pendiri &amp; Mitra Pendiri 2016</h2>
+            <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="uk-button uk-button-primary uk-margin-medium-top uk-visible@m">view more</a>
+            <a href="" class="uk-button uk-button-primary uk-margin-small-top uk-visible@m">view more</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="~/static/img/slide-02.jpg" alt="" uk-cover>
+        <div class="uk-position-center-left uk-position-large">
+          <div class="dp-slide-box uk-padding uk-width-5-6">
+            <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Temu Pendiri &amp; Mitra Pendiri 2015</h2>
+            <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="" class="uk-button uk-button-primary uk-margin-small-top uk-visible@m">view more</a>
           </div>
         </div>
       </li>
@@ -27,21 +38,10 @@
         <img src="~/static/img/slide-03.jpg" alt="" uk-cover>
         <div class="uk-position-center-left uk-position-large">
           <div class="dp-slide-box uk-padding uk-width-5-6">
-            <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Temu Pendiri &amp; Mitra Pendiri 2015</h2>
-            <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="uk-button uk-button-primary uk-margin-medium-top uk-visible@m">view more</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <img src="~/static/img/slide-04.jpg" alt="" uk-cover>
-        <div class="uk-position-center-left uk-position-large">
-          <div class="dp-slide-box uk-padding uk-width-5-6">
             <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Temu Pendiri &amp; Mitra Pendiri 2014</h2>
             <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="uk-button uk-button-primary uk-margin-medium-top uk-visible@m">view more</a>
+            <a href="" class="uk-button uk-button-primary uk-margin-small-top uk-visible@m">view more</a>
           </div>
         </div>
       </li>
@@ -57,8 +57,8 @@
     border-radius: 10px;
 
     h2 {
-      font-weight: 700;
-      font-size: 40px;
+      font-weight: 400;
+      font-size: 32px;
       line-height: 1;
     }
 
