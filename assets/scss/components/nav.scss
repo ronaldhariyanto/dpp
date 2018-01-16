@@ -101,7 +101,7 @@ $internal-nav-parent-open-image: "data:image/svg+xml;charset=UTF-8,%3Csvg%20widt
  * Must target `a` elements to exclude other elements (e.g. lists)
  */
 
-.uk-nav > li > a { padding: $nav-item-padding-vertical $nav-item-padding-horizontal; }
+.uk-nav > li > a { padding: 0; }
 
 
 /* Sublists

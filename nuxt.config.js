@@ -13,8 +13,8 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'js/uikit.min.js' },
-      { src: 'js/uikit-icons.min.js' }
+      { src: '/js/uikit.min.js' },
+      { src: '/js/uikit-icons.min.js' }
     ]
   },
   loading: { color: '#3B8070' },
@@ -22,7 +22,7 @@ module.exports = {
     '~/assets/scss/uikit.scss'
   ],
   build: {
-    publicPath: 'https://ronaldhariyanto.github.io/dpp/dist/',
+    publicPath: 'http://dpp-dev.myteknomedia.com/',
     extend (config, ctx) {
       if (ctx.dev && ctx.isClient) {
         config.module.rules.push({

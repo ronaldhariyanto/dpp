@@ -1,20 +1,26 @@
 <template>
-  <section class="">
-    <div class="uk-container">
-      <ul class="uk-breadcrumb uk-margin-small-top uk-margin-medium-bottom">
-        <li><nuxt-link to="/">home</nuxt-link></li>
-        <li><span>Berita</span></li>
-      </ul>
-      <div uk-grid>
-        <article v-for="news in NewsData" :key="news.id" class="uk-width-1-3@m">
-          <h4>{{news.title.rendered}}
-            <small>{{news.date}}</small>
-          </h4>
-          <div v-html="news.content.rendered"></div>
-        </article>
+  <div>
+    <section class="breadcrumb uk-margin-medium-bottom">
+      <div class="uk-container">
+        <ul class="uk-breadcrumb">
+          <li><nuxt-link to="/">home</nuxt-link></li>
+          <li><b>Berita</b></li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="">
+      <div class="uk-container">
+        <div uk-grid>
+          <article v-for="news in NewsData" :key="news.id" class="uk-width-1-3@m">
+            <h4>{{news.title.rendered}}
+              <small>{{news.date}}</small>
+            </h4>
+            <div v-html="news.content.rendered"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>

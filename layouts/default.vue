@@ -8,7 +8,7 @@
     <div id="offcanvas-nav" uk-offcanvas="overlay: true">
       <div class="uk-offcanvas-bar">
         <div class="dp-logo-mobile uk-hidden@m">
-          <img src="~/static/img/logo-dp-header.png" alt="">
+          <img src="~/static/img/logo-dpp.png" alt="">
           <span class="dp-logo-mobile__title">Dana Pensiun
             <b class="dp-logo-mobile__subtitle">Pertamina</b>
           </span>

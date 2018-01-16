@@ -154,32 +154,32 @@
 
         <div class="uk-child-width-1-3@m uk-grid" uk-grid uk-lightbox="animation: fade">
           <div>
-            <a class="uk-inline" data-type="image" href="~/static/img/slide/23.jpg" caption="Caption 1">
+            <a class="uk-inline" data-type="image" :href="require('~/static/img/slide/23.jpg')" caption="Caption 1">
               <img src="~/static/img/slide/23.jpg" alt="">
             </a>
           </div>
           <div>
-            <a class="uk-inline" data-type="image" href="~/static/img/slide/24.jpg" caption="Caption 2">
+            <a class="uk-inline" data-type="image" :href="require('~/static/img/slide/24.jpg')" caption="Caption 2">
               <img src="~/static/img/slide/24.jpg" alt="">
             </a>
           </div>
           <div>
-            <a class="uk-inline" data-type="image" href="~/static/img/slide/25.jpg" caption="Caption 3">
+            <a class="uk-inline" data-type="image" :href="require('~/static/img/slide/25.jpg')" caption="Caption 3">
               <img src="~/static/img/slide/25.jpg" alt="">
             </a>
           </div>
           <div>
-            <a class="uk-inline" data-type="image" href="~/static/img/slide/26.jpg" caption="Caption 3">
+            <a class="uk-inline" data-type="image" :href="require('~/static/img/slide/26.jpg')" caption="Caption 4">
               <img src="~/static/img/slide/26.jpg" alt="">
             </a>
           </div>
           <div>
-            <a class="uk-inline" data-type="image" href="~/static/img/slide/27.jpg" caption="Caption 3">
+            <a class="uk-inline" data-type="image" :href="require('~/static/img/slide/27.jpg')" caption="Caption 5">
               <img src="~/static/img/slide/27.jpg" alt="">
             </a>
           </div>
           <div>
-            <a class="uk-inline" href="~/static/img/slide/28.jpg" caption="Caption 3">
+            <a class="uk-inline" data-type="image" :href="require('~/static/img/slide/28.jpg')" caption="Caption 6">
               <img src="~/static/img/slide/28.jpg" alt="">
             </a>
           </div>

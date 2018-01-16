@@ -19,7 +19,7 @@
           </a>
 
           <div class="dp-logo-mobile uk-hidden@m">
-            <img src="~/static/img/logo-dp-header.png" alt="">
+            <img src="~/static/img/logo-dpp.png" alt="">
             <span class="dp-logo-mobile__title">Dana Pensiun
               <b class="dp-logo-mobile__subtitle">Pertamina</b>
             </span>
@@ -39,7 +39,6 @@
               </template>
             </li>
           </ul>
-
         </div>
         <div class="uk-navbar-right uk-visible@m">
           <div class="uk-navbar-item">
@@ -145,7 +144,6 @@
         axios.get('http://dpp-cms-dev.myteknomedia.com/wp-json/wp-api-menus/v2/menu-locations/main-top-nav')
           .then(response => {
             this.topNav = response.data
-            console.log(response.data)
           })
       }
     }
