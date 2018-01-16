@@ -5,7 +5,7 @@
         <div class="" uk-grid>
           <div class="uk-width-1-6@m">
             <div class="dp-footer-logo">
-              <img src="~/static/img/logo-dp-footer.png" alt="">
+              <img src="~/static/img/logo-dpp.png" alt="">
               <span class="uk-margin-small-top dp-footer-logo__title">Dana Pensiun</span>
               <span class="uk-margin-small-bottom dp-footer-logo__subtitle">Pertamina</span>
             </div>
@@ -89,6 +89,10 @@
 
     &-logo {
     text-align: center;
+
+      img {
+        height: 60px;
+      }
 
       &__title {
         display: block;

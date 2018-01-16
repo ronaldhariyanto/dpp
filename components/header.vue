@@ -26,21 +26,18 @@
           </div>
 
           <ul class="uk-navbar-nav uk-visible@m">
-            <li><nuxt-link to="/">Home</nuxt-link></li>
-            <li>
-              <nuxt-link to="/tentang-kami">Tentang Kami</nuxt-link>
-              <div class="uk-navbar-dropdown">
-                <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li><nuxt-link to="/tentang-kami/sejarah">Sejarah</nuxt-link></li>
-                </ul>
-              </div>
+            <li v-for="topnav in topNav" :key="topnav.ID">
+              <nuxt-link :to="topnav.url">{{topnav.title}}</nuxt-link>
+              <template v-if="topnav.children.length != 0">
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li v-for="subtopnav in topnav.children" :key="subtopnav.ID">
+                      <nuxt-link :to="subtopnav.url">{{subtopnav.title}}</nuxt-link>
+                    </li>
+                  </ul>
+                </div>
+              </template>
             </li>
-            <li><nuxt-link to="/informasi">Informasi</nuxt-link></li>
-            <li><nuxt-link to="/laporan">Laporan</nuxt-link></li>
-            <li><nuxt-link to="/berita">Berita &amp; Foto</nuxt-link></li>
-            <li><nuxt-link to="/hubungi">Hubungi</nuxt-link></li>
-            <li><nuxt-link to="/himpana">Himpana</nuxt-link></li>
-            <li><nuxt-link to="/forum">Forum</nuxt-link></li>
           </ul>
 
         </div>
@@ -128,3 +125,29 @@
     }
   }
 </style>
+
+<script>
+  import axios from 'axios'
+
+  export default {
+    data () {
+      return {
+        topNav: []
+      }
+    },
+
+    mounted () {
+      this.getTopMenu()
+    },
+
+    methods: {
+      getTopMenu () {
+        axios.get('http://dpp-cms-dev.myteknomedia.com/wp-json/wp-api-menus/v2/menu-locations/main-top-nav')
+          .then(response => {
+            this.topNav = response.data
+            console.log(response.data)
+          })
+      }
+    }
+  }
+</script>
