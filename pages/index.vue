@@ -6,24 +6,34 @@
       <div class="uk-container">
         <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
           <div>
-            <img src="~/static/img/icon/icon-penting.svg" alt="" width="120">
-            <span class="">Penting</span>
+            <nuxt-link to="/informasi">
+              <img src="~/static/img/icon/icon-penting.svg" alt="" width="120">
+              <span class="">Penting</span>
+            </nuxt-link>
           </div>
           <div>
-            <img src="~/static/img/icon/icon-daftar.svg" alt="" width="120">
-            <span class="">Daftar Ulang</span>
+            <nuxt-link to="/laporan">
+              <img src="~/static/img/icon/icon-daftar.svg" alt="" width="120">
+              <span class="">Daftar Ulang</span>
+            </nuxt-link>
           </div>
           <div>
-            <img src="~/static/img/icon/icon-forum.svg" alt="" width="120">
-            <span class="">Forum</span>
+            <nuxt-link to="/forum">
+              <img src="~/static/img/icon/icon-forum.svg" alt="" width="120">
+              <span class="">Forum</span>
+            </nuxt-link>
           </div>
           <div>
-            <img src="~/static/img/icon/icon-berita.svg" alt="" width="120">
-            <span class="">Berita &amp; Foto</span>
+            <nuxt-link to="/berita">
+              <img src="~/static/img/icon/icon-berita.svg" alt="" width="120">
+              <span class="">Berita &amp; Foto</span>
+            </nuxt-link>
           </div>
           <div>
-            <img src="~/static/img/icon/icon-tanya.svg" alt="" width="120">
-            <span class="">Tanya Jawab</span>
+            <nuxt-link to="/himpana">
+              <img src="~/static/img/icon/icon-tanya.svg" alt="" width="120">
+              <span class="">Tanya Jawab</span>
+            </nuxt-link>
           </div>
         </div>
       </div>

@@ -4,12 +4,12 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const _08e38e60 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
-const _5f82560e = () => import('../pages/laporan.vue' /* webpackChunkName: "pages/laporan" */).then(m => m.default || m)
-const _5c3951fe = () => import('../pages/himpana.vue' /* webpackChunkName: "pages/himpana" */).then(m => m.default || m)
-const _a62f90ee = () => import('../pages/berita.vue' /* webpackChunkName: "pages/berita" */).then(m => m.default || m)
-const _997d99a2 = () => import('../pages/forum.vue' /* webpackChunkName: "pages/forum" */).then(m => m.default || m)
-const _1c4f8cbe = () => import('../pages/hubungi.vue' /* webpackChunkName: "pages/hubungi" */).then(m => m.default || m)
-const _272f22fc = () => import('../pages/informasi.vue' /* webpackChunkName: "pages/informasi" */).then(m => m.default || m)
+const _5a8bfcbc = () => import('../pages/laporan/index.vue' /* webpackChunkName: "pages/laporan/index" */).then(m => m.default || m)
+const _13183bfe = () => import('../pages/himpana/index.vue' /* webpackChunkName: "pages/himpana/index" */).then(m => m.default || m)
+const _38a5334c = () => import('../pages/berita/index.vue' /* webpackChunkName: "pages/berita/index" */).then(m => m.default || m)
+const _26605a72 = () => import('../pages/forum/index.vue' /* webpackChunkName: "pages/forum/index" */).then(m => m.default || m)
+const _b7b9e67e = () => import('../pages/hubungi/index.vue' /* webpackChunkName: "pages/hubungi/index" */).then(m => m.default || m)
+const _fb870702 = () => import('../pages/informasi/index.vue' /* webpackChunkName: "pages/informasi/index" */).then(m => m.default || m)
 const _cd512b3e = () => import('../pages/tentang-kami/index.vue' /* webpackChunkName: "pages/tentang-kami/index" */).then(m => m.default || m)
 const _635a7d82 = () => import('../pages/tentang-kami/sejarah.vue' /* webpackChunkName: "pages/tentang-kami/sejarah" */).then(m => m.default || m)
 
@@ -54,32 +54,32 @@ export function createRouter () {
 		},
 		{
 			path: "/laporan",
-			component: _5f82560e,
+			component: _5a8bfcbc,
 			name: "laporan"
 		},
 		{
 			path: "/himpana",
-			component: _5c3951fe,
+			component: _13183bfe,
 			name: "himpana"
 		},
 		{
 			path: "/berita",
-			component: _a62f90ee,
+			component: _38a5334c,
 			name: "berita"
 		},
 		{
 			path: "/forum",
-			component: _997d99a2,
+			component: _26605a72,
 			name: "forum"
 		},
 		{
 			path: "/hubungi",
-			component: _1c4f8cbe,
+			component: _b7b9e67e,
 			name: "hubungi"
 		},
 		{
 			path: "/informasi",
-			component: _272f22fc,
+			component: _fb870702,
 			name: "informasi"
 		},
 		{
