@@ -4,7 +4,7 @@
 
     <section class="dp-icons-front uk-padding-small uk-margin-medium-bottom">
       <div class="uk-container">
-        <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div class="uk-grid uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
           <div>
             <nuxt-link to="/informasi">
               <img src="~/static/img/icon/icon-penting.svg" alt="" width="120">
@@ -43,7 +43,7 @@
       <div class="uk-container">
         <h3 class="dp-heading uk-text-center">Pengumuman Terbaru</h3>
         <div class="dp-divider uk-margin-medium-bottom"></div>
-        <div class="uk-grid-match uk-child-width-expand@s" uk-grid>
+        <div class="uk-grid uk-grid-match uk-child-width-expand@s" uk-grid>
           <div>
             <div class="block-service_item ">
               <div class="block-service_item-icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></div>
@@ -95,63 +95,32 @@
         </div>
       </div>
     </section>
-
     <section class="dp-news-front uk-margin-medium-bottom">
       <div class="uk-container">
         <h3 class="dp-heading uk-text-center">Berita Dana Pensiun Pertamina</h3>
         <div class="dp-divider uk-margin-medium-bottom"></div>
-        <div class="uk-child-width-1-2@m" uk-grid>
+        <div class="uk-grid uk-child-width-1-2@m" >
           <div class="uk-grid-item-match">
             <div class="uk-card uk-card-default">
               <img src="~/static/img/content/berita-01.jpg" alt="" class="uk-width-1-1">
               <div class="uk-card-body">
-                <h4>Temu Pendiri &amp; Mitra Pendiri 2017</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h4><nuxt-link :to="'berita/'+latestNewsBig.slug">{{ latestNewsBigTitle }}</nuxt-link></h4>
               </div>
             </div>
           </div>
           <div class="uk-grid-item-match">
-            <div class="uk-child-width-1-2@m" uk-grid>
-              <div class="uk-grid-item-match">
+            <div class="uk-grid uk-child-width-1-2@m" >
+              <div class="uk-grid-item-match dp-news-front__small" v-for="news in latestNewsSmall">
                 <div class="uk-card uk-card-default">
                   <div>
                     <img src="~/static/img/content/berita-02.jpg" alt="" class="uk-width-1-1">
                   </div>
                   <div class="uk-padding-small">
-                    <h4>Pelepasan dan Pengukuhan Kepala Internal Audit</h4>
+                    <h4><nuxt-link :to="'berita/'+news.slug">{{news.title.rendered}}</nuxt-link></h4>
                   </div>
                 </div>
               </div>
-              <div class="uk-grid-item-match">
-                <div class="uk-card uk-card-default">
-                  <div>
-                    <img src="~/static/img/content/berita-03.jpg" alt="" class="uk-width-1-1">
-                  </div>
-                  <div class="uk-padding-small">
-                    <h4>Pelepasan dan Pengukuhan Manager Kepensiunan</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="uk-grid-item-match">
-                <div class="uk-card uk-card-default">
-                  <div>
-                    <img src="~/static/img/content/berita-04.jpg" alt="" class="uk-width-1-1">
-                  </div>
-                  <div class="uk-padding-small">
-                    <h4>Ringkasan Kinerja DP Pertamina Tahun 2016</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="uk-grid-item-match">
-                <div class="uk-card uk-card-default">
-                  <div>
-                    <img src="~/static/img/content/berita-04.jpg" alt="" class="uk-width-1-1">
-                  </div>
-                  <div class="uk-padding-small">
-                    <h4>Manfaat Pensiun Sekaligus</h4>
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
@@ -320,10 +289,17 @@
     .uk-card {
       border: 2px solid #e0e0e0;
     }
+    &__small {
+      &:nth-of-type(1),
+      &:nth-of-type(2) {
+        margin-bottom: 15px;
+      }
+    }
   }
 </style>
 
 <script>
+import axios from 'axios'
 import Slideshow from '~/components/slideshow.vue'
 import Banner from '~/components/banner.vue'
 
@@ -331,6 +307,32 @@ export default {
   components: {
     Slideshow,
     Banner
+  },
+
+  data () {
+    return {
+      latestNewsBig: {},
+      latestNewsBigTitle: '',
+      latestNewsSmall: []
+    }
+  },
+
+  mounted () {
+    this.getLatestNews()
+  },
+
+  methods: {
+    async getLatestNews () {
+      await axios.get('http://dpp-cms-dev.myteknomedia.com/wp-json/wp/v2/posts/?_embed&filter[category_name]=Berita&per_page=5')
+        .then(response => {
+          const x0 = response.data
+          const x1 = x0[0]
+          this.latestNewsBigTitle = x1.title.rendered
+          this.latestNewsBig = x1
+          const x2 = x0.slice(1)
+          this.latestNewsSmall = x2
+        })
+    }
   }
 }
 </script>

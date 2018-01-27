@@ -1,50 +1,18 @@
 <template>
   <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push; ratio: 7:2">
     <ul class="uk-slideshow-items">
-      <li>
-        <img src="~/static/img/slide-00.jpg" alt="" uk-cover>
-        <div class="uk-position-center-left uk-position-large">
-          <div class="dp-slide-box uk-padding uk-width-5-6">
-            <h2 uk-slideshow-parallax="x: 100,-100">Temu Pendiri &amp; Mitra Pendiri 2017</h2>
-            <p uk-slideshow-parallax="x: 200,-200" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="uk-button uk-button-primary uk-margin-small-top uk-visible@m">view more</a>
+      <template  v-for="slide in slider">
+        <li>
+          <img :src=slide.file alt="" uk-cover>
+          <div class="uk-position-center-left uk-position-large">
+            <div class="dp-slide-box uk-padding uk-width-5-6">
+              <h2 uk-slideshow-parallax="x: 100,-100">{{ slide.title }}</h2>
+              <p uk-slideshow-parallax="x: 200,-200" class="uk-visible@m">{{ slide.text }}</p>
+              <a :href=slide.link class="uk-button uk-button-primary uk-margin-small-top uk-visible@m">view more</a>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <img src="~/static/img/slide-01.jpg" alt="" uk-cover>
-        <div class="uk-position-center-left uk-position-large">
-          <div class="dp-slide-box uk-padding uk-width-5-6">
-            <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Temu Pendiri &amp; Mitra Pendiri 2016</h2>
-            <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="uk-button uk-button-primary uk-margin-small-top uk-visible@m">view more</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <img src="~/static/img/slide-02.jpg" alt="" uk-cover>
-        <div class="uk-position-center-left uk-position-large">
-          <div class="dp-slide-box uk-padding uk-width-5-6">
-            <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Temu Pendiri &amp; Mitra Pendiri 2015</h2>
-            <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="uk-button uk-button-primary uk-margin-small-top uk-visible@m">view more</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <img src="~/static/img/slide-03.jpg" alt="" uk-cover>
-        <div class="uk-position-center-left uk-position-large">
-          <div class="dp-slide-box uk-padding uk-width-5-6">
-            <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Temu Pendiri &amp; Mitra Pendiri 2014</h2>
-            <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="uk-button uk-button-primary uk-margin-small-top uk-visible@m">view more</a>
-          </div>
-        </div>
-      </li>
+        </li>
+      </template>
     </ul>
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
@@ -80,3 +48,29 @@
     }
   }
 </style>
+
+<script>
+  import axios from 'axios'
+
+  export default {
+    data () {
+      return {
+        slider: []
+      }
+    },
+
+    mounted () {
+      this.getSlider()
+    },
+
+    methods: {
+      getSlider () {
+        axios.get('http://dpp-cms-dev.myteknomedia.com/wp-json/wp/v2/pages?_embed&slug=home')
+          .then(response => {
+            this.slider = response.data[0].slides
+            console.log('data slider ~>', response.data[0].slides)
+          })
+      }
+    }
+  }
+</script>

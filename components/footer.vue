@@ -13,54 +13,42 @@
           <div class="uk-width-1-4@m">
             <div class="">
               <h4>Contact Us</h4>
-              <p>Jl. M.I Ridwan Rais No.7A
-              Jakarta Pusat
-              Indonesia
-              10110
-              </p>
+              <p>{{ SiteInfo.contact_us_address }}</p>
               <ul class="uk-list">
-                <li>Phone: <br>(021) 3802280 – (021) 3802281 <br>Ext. 150, 391</li>
-                <li>Fax: <br>(021) 3804623 – (021) 3804593</li>
+                <li>Phone: {{ SiteInfo.contact_us_phone }}</li>
+                <li>Fax: {{ SiteInfo.contact_us_fax }}</li>
               </ul>
             </div>
           </div>
-          <div class="uk-width-1-6@m">
-            <div class="">
-              <h4>Informasi</h4>
-              <ul class="uk-list">
-                <li><a href="">Peraturan</a></li>
-                <li><a href="">Prosedur</a></li>
-                <li><a href="">Majalah Bina</a></li>
-                <li><a href="">Links</a></li>
-              </ul>
+          <template v-for="menu in footerNav">
+            <div class="uk-width-1-6@m">
+              <div class="">
+                <h4>{{ menu.title }}</h4>
+                <ul class="uk-list">
+                  <li v-for="list in menu.children" :key="list.ID">
+                    <nuxt-link :to=list.url>{{ list.title }}</nuxt-link>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="uk-width-1-6@m">
-            <div class="">
-              <h4>Laporan</h4>
-              <ul class="uk-list">
-                <li><a href="">Laporan Keuangan</a></li>
-                <li><a href="">Laporan Tahunan</a></li>
-                <li><a href="">Cetak E-SPT</a></li>
-                <li><a href="">Simulasi</a></li>
-              </ul>
-            </div>
-          </div>
+          </template>
           <div class="uk-width-1-4@m">
             <h4>Follow us on:</h4>
             <div class="uk-flex">
-              <a href="" class="uk-margin-small-right" >
+              <a :href=SiteInfo.social_media_twitter class="uk-margin-small-right" >
                 <span uk-icon="icon: twitter; ratio: 1.2"></span>
               </a>
-              <a href="" class="uk-margin-small-right">
+              <a :href=SiteInfo.social_media_facebook class="uk-margin-small-right">
                 <span uk-icon="icon: facebook; ratio: 1.2"></span>
               </a>
-              <a href="" class="">
+              <a :href=SiteInfo.social_media_google class="">
                 <span uk-icon="icon: google-plus; ratio: 1.2"></span>
               </a>
             </div>
             <div class="uk-margin-medium-top">
-              <a href="#" class="uk-display-block"><img src="~/static/img/logo-ojk.png" alt=""></a>
+              <a href="http://www.ojk.go.id/" target="_blank" class="uk-display-block">
+                <img src="~/static/img/logo-ojk.png" alt="">
+              </a>
             </div>
           </div>
         </div>
@@ -68,7 +56,7 @@
     </div>
     <div class="dp-footer__copyright ">
       <div class="container uk-text-center uk-padding-small">
-        Copyright &copy; 2017 Dana Pensiun Pertamina. All Rights Reserved.
+        Copyright &copy; {{currentYears}} Dana Pensiun Pertamina. All Rights Reserved.
       </div>
     </div>
   </footer>
@@ -122,3 +110,37 @@
     }
   }
 </style>
+
+<script>
+  import axios from 'axios'
+
+  export default {
+    data () {
+      return {
+        footerNav: [],
+        SiteInfo: {},
+        currentYears: new Date().getFullYear()
+      }
+    },
+
+    mounted () {
+      this.getFooterMenu()
+      this.getSiteInfo()
+    },
+
+    methods: {
+      getFooterMenu () {
+        axios.get('http://dpp-cms-dev.myteknomedia.com/wp-json/wp-api-menus/v2/menu-locations/main-footer-nav')
+          .then(response => {
+            this.footerNav = response.data
+          })
+      },
+      getSiteInfo () {
+        axios.get('http://dpp-cms-dev.myteknomedia.com/wp-json/wp/v2/setting')
+          .then(response => {
+            this.SiteInfo = response.data
+          })
+      }
+    }
+  }
+</script>
