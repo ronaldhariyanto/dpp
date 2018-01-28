@@ -2,7 +2,7 @@
   <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push; ratio: 7:2">
     <ul class="uk-slideshow-items">
       <template  v-for="slide in slider">
-        <li>
+        <li :key="slide.id">
           <img :src=slide.file alt="" uk-cover>
           <div class="uk-position-center-left uk-position-large">
             <div class="dp-slide-box uk-padding uk-width-5-6">

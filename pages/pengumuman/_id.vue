@@ -4,7 +4,7 @@
       <div class="uk-container">
         <ul class="uk-breadcrumb">
           <li><nuxt-link to="/">home</nuxt-link></li>
-          <li><nuxt-link to="/berita">Berita</nuxt-link></li>
+          <li><nuxt-link to="/pengumuman">Pengumuman</nuxt-link></li>
           <li><b>{{newsTitle}}</b></li>
         </ul>
       </div>
