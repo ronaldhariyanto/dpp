@@ -40,7 +40,6 @@
       getNews () {
         const getParams = this.$route.params.id
         const endPoint = `http://dpp-cms-dev.myteknomedia.com/wp-json/wp/v2/posts/?slug=${getParams}`
-        console.log(endPoint)
         axios.get(endPoint)
           .then(response => {
             const arrayToObject = (arr) => Object.assign({}, ...arr)

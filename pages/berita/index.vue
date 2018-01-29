@@ -12,10 +12,13 @@
       <div class="uk-container">
         <div uk-grid>
           <article v-for="news in NewsData" :key="news.id" class="uk-width-1-3@m">
-            <h4>{{news.title.rendered}}
-              <small>{{news.date}}</small>
+            <h4>
+              <nuxt-link :to="'berita/'+news.slug">
+                {{news.title.rendered}}
+              </nuxt-link>
             </h4>
-            <div v-html="news.content.rendered"></div>
+            <div>{{news.date}}</div>
+            <div v-html="news.excerpt.rendered"></div>
           </article>
         </div>
       </div>

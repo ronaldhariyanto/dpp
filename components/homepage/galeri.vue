@@ -34,7 +34,6 @@
         axios.get('http://dpp-cms-dev.myteknomedia.com/wp-json/wp/v2/posts/?_embed&filter[category_name]=Foto')
           .then(response => {
             this.GaleriData = response.data
-            console.log('galeri ~>', response.data)
           })
       }
     }
