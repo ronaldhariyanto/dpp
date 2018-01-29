@@ -127,7 +127,6 @@
         axios.get('http://dpp-cms-dev.myteknomedia.com/wp-json/wp/v2/posts/?_embed&filter[category_name]=Pengumuman')
           .then(response => {
             this.pengumuman = response.data
-            console.log('data pengumuman ~>', response.data)
           })
       }
     }

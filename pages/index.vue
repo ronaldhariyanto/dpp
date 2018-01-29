@@ -48,7 +48,9 @@
         <div class="uk-grid uk-child-width-1-2@m" >
           <div class="uk-grid-item-match">
             <div class="uk-card uk-card-default">
-              <img src="~/static/img/content/berita-01.jpg" alt="" class="uk-width-1-1">
+              <div class="dp-news-front__image-large">
+                <img :src="latestNewsBigImage" alt="" class="uk-width-1-1">
+              </div>
               <div class="uk-card-body">
                 <h4><nuxt-link :to="'berita/'+latestNewsBig.slug">{{ latestNewsBigTitle }}</nuxt-link></h4>
               </div>
@@ -58,8 +60,8 @@
             <div class="uk-grid uk-child-width-1-2@m" >
               <div class="uk-grid-item-match dp-news-front__small" v-for="news in latestNewsSmall">
                 <div class="uk-card uk-card-default">
-                  <div>
-                    <img src="~/static/img/content/berita-02.jpg" alt="" class="uk-width-1-1">
+                  <div class="dp-news-front__image-small">
+                    <img :src="hasThumbnail(news)" alt="" class="uk-width-1-1">
                   </div>
                   <div class="uk-padding-small">
                     <h4><nuxt-link :to="'berita/'+news.slug">{{news.title.rendered}}</nuxt-link></h4>
@@ -118,6 +120,20 @@
         margin-bottom: 15px;
       }
     }
+    
+    &__image {
+      &-large {
+        height: 400px;
+        overflow: hidden;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      
+      &-small {
+        height: 150px;
+        overflow: hidden;
+        border-bottom: 1px solid #e0e0e0;
+      }
+    }
   }
 </style>
 
@@ -140,7 +156,9 @@ export default {
     return {
       latestNewsBig: {},
       latestNewsBigTitle: '',
-      latestNewsSmall: []
+      latestNewsBigImage: [],
+      latestNewsSmall: [],
+      latestNewsSmallImage: []
     }
   },
 
@@ -149,15 +167,22 @@ export default {
   },
 
   methods: {
+    hasThumbnail (post) {
+      if (post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0].media_details && post._embedded['wp:featuredmedia'][0].media_details.sizes) {
+        return post._embedded['wp:featuredmedia'][0].media_details.sizes.thumbnail.source_url
+      }
+    },
     async getLatestNews () {
       await axios.get('http://dpp-cms-dev.myteknomedia.com/wp-json/wp/v2/posts/?_embed&filter[category_name]=Berita&per_page=5')
         .then(response => {
           const x0 = response.data
           const x1 = x0[0]
-          this.latestNewsBigTitle = x1.title.rendered
-          this.latestNewsBig = x1
           const x2 = x0.slice(1)
+          this.latestNewsBig = x1
+          this.latestNewsBigTitle = x1.title.rendered
+          this.latestNewsBigImage = x1._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url
           this.latestNewsSmall = x2
+          this.latestNewsSmallImage = x2
         })
     }
   }

@@ -1,13 +1,13 @@
 <template>
-  <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push; ratio: 7:2">
+  <div class="uk-position-relative uk-visible-toggle uk-light uk-slideshow" uk-slideshow="animation: push; ratio: 7:2; autoplay: true; index: 2">
     <ul class="uk-slideshow-items">
-      <template  v-for="slide in slider">
-        <li :key="slide.id">
+      <template  v-for="(slide, index) in slider">
+        <li :key="slide.id" :data-index="index">
           <img :src=slide.file alt="" uk-cover>
           <div class="uk-position-center-left uk-position-large">
             <div class="dp-slide-box uk-padding uk-width-5-6">
               <h2 uk-slideshow-parallax="x: 100,-100">{{ slide.title }}</h2>
-              <p uk-slideshow-parallax="x: 200,-200" class="uk-visible@m">{{ slide.text }}</p>
+              <div uk-slideshow-parallax="x: 200,-200" class="uk-visible@m" v-html="slide.text"></div>
               <a :href=slide.link class="uk-button uk-button-primary uk-margin-small-top uk-visible@m">view more</a>
             </div>
           </div>
@@ -64,11 +64,10 @@
     },
 
     methods: {
-      getSlider () {
-        axios.get('http://dpp-cms-dev.myteknomedia.com/wp-json/wp/v2/pages?_embed&slug=home')
+      async getSlider () {
+        await axios.get('http://dpp-cms-dev.myteknomedia.com/wp-json/wp/v2/pages?_embed&slug=home')
           .then(response => {
             this.slider = response.data[0].slides
-            console.log('data slider ~>', response.data[0].slides)
           })
       }
     }

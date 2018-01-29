@@ -13,8 +13,8 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: '/js/uikit.min.js' },
-      { src: '/js/uikit-icons.min.js' }
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit.min.js' },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit-icons.min.js' }
     ]
   },
   loading: { color: '#3B8070' },
